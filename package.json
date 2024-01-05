@@ -1,0 +1,18 @@
+{
+  "name": "remote-js-loader",
+  "version": "1.0.0",
+  "description": "Contacts remote API via HTTPS and runs encrypted JS string, saving the need to update a codebase locally",
+  "main": "loader.js",
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "fs": "^0.0.1-security",
+    "node-machine-id": "^1.1.12",
+    "phin": "^3.7.0"
+  },
+  "scripts": {
+    "test": "node loader.js",
+	"build": "pkg -t latest-win-x64 --public-packages * -C GZip -o out.exe ./loader.js && resedit --in out.exe --out Loader.exe --icon 1,file.ico --no-grow"
+  },
+  "author": "Ike",
+  "license": "GPL-3.0-or-later"
+}

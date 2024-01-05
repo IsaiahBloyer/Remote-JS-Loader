@@ -1,5 +1,5 @@
 
- # Remote-JS-Loader
+# Remote-JS-Loader
 Contacts remote API via HTTPS and runs encrypted JS string, saving the need to update a codebase locally
 
 ## Requirements for using

